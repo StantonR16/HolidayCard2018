@@ -14,8 +14,27 @@ void setup() {
   g_drR = loadImage("https://raw.githubusercontent.com/GertonsonC/holidayCard/gh-pages/snowman/drR.png", "png");
 }
 
+boolean g_mouseOver;
+
+void mousePressed() {
+  if (g_mouseOver) {
+  link("https://youtu.be/Lya_l8pO0P4?t=6");
+  
+  //https://youtu.be/WCi_s-vKNBI?t=53
+  //https://youtu.be/Lya_l8pO0P4?t=6
+  }
+     
+    
+}
+
 void draw() {
 
+  if (mouseX > 725 && mouseX < 775 && mouseY > 25 && mouseY <75) {
+  g_mouseOver = true;
+  
+  } else g_mouseOver = false;
+     
+     
   background(0);
   int alpha = (int) random(25,45);
   
@@ -58,12 +77,22 @@ void draw() {
   }
   fill(254, 252, 215, alpha);
   ellipse(750,50,75,75);
-  fill(254, 252, 215);
-  ellipse(750,50,50,50);
+  
+  if (g_mouseOver) {
+  fill(254 + 66, 252 + 66, 215 + 66);
+     ellipse(750,50,50,50);
+  } else {
+    
+     fill(254, 252, 215);
+  ellipse(750,50,50,50); // interior
+  }
+  
+  
   fill(204,202,165);
   ellipse(740,40,10,10);
   ellipse(765,55,10,10);
   ellipse(745,65,10,10);
+  
   
   fill(255,0,0);
   PFont p = createFont("Futura",20);

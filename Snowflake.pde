@@ -51,7 +51,7 @@ class Snowflake {
     if (m_xDelta >= DELTA_LIM) m_xDelta = getXDeltaIncrement();
     if (m_yDelta >= DELTA_LIM) m_yDelta = getYDeltaIncrement();
 
-    println("xd: " + m_xDelta + " dy: " + m_yDelta);
+    //println("xd: " + m_xDelta + " dy: " + m_yDelta);
     m_x += m_xDelta;
     m_y += m_yDelta;
   }

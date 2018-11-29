@@ -40,14 +40,14 @@ class Snowpile {
     this.y = y;
   }
   
-  private static final int WIDTH_LIM = 500;
+  private static final int WIDTH_LIM = 300;
   void drawSnowpile() {
     if (w < WIDTH_LIM) {
       fill(255);
     rect(x,y-=yDelta,l,w+=yDelta);
     //ellipse(x,y-=yDelta,l,w+=yDelta);
     
-    println("dw: " + yDelta);
+   // println("dw: " + yDelta + " w: " + w);
     }
     
     
