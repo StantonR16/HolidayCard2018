@@ -11,7 +11,7 @@ void setup() {
     g_rgSnow[i] = new Snowflake();
   size(800,800);
   frameRate(60);
-  g_drR = loadImage("drR.png", "png");
+  g_drR = loadImage("drR.png");
 }
 
 boolean g_mouseOver;
