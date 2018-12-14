@@ -18,8 +18,10 @@ boolean g_mouseOver;
 
 void mousePressed() {
   if (g_mouseOver) {
-  link("https://youtu.be/Lya_l8pO0P4?t=6");
+  link("https://school.district196.org/event/1930232836/profile");
   
+  //https://youtu.be/Lya_l8pO0P4?t=6
+  // 
   //https://youtu.be/WCi_s-vKNBI?t=53
   //https://youtu.be/Lya_l8pO0P4?t=6
   }
